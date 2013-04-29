@@ -124,6 +124,10 @@ add_action( 'widgets_init', 'ostentus_widgets_init' );
  * Enqueue scripts and styles
  */
 function ostentus_scripts() {
+
+	wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,300italic,700italic');
+	wp_enqueue_style( 'googleFonts');
+
 	wp_enqueue_style( 'Ostentus-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'Ostentus-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );

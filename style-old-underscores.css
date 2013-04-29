@@ -1,0 +1,278 @@
+/*
+Theme Name: hb2013-temp
+Theme URI: http://underscores.me/
+Author: Hugo Baeta
+Author URI: http://hugobaeta.com
+Description: Description
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+/* =Reset
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  background: #fff;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  font-weight: normal;
+  text-align: left;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+a img {
+  border: 0;
+}
+
+/* =Global
+----------------------------------------------- */
+body {
+  color: #796C72;
+  color: rgba(100, 90, 100, 0.9);
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #eeeeee url("images/header-bg.jpg") no-repeat fixed center center;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+body:after {
+  background-image: -webkit-radial-gradient(50% 50%, circle cover, rgba(20, 10, 0, 0) 50%, rgba(50, 40, 30, 0.3) 100%);
+  background-image: -moz-radial-gradient(50% 50%, circle cover, rgba(20, 10, 0, 0) 50%, rgba(50, 40, 30, 0.3) 100%);
+  background-image: -ms-radial-gradient(50% 50%, circle cover, rgba(20, 10, 0, 0) 50%, rgba(50, 40, 30, 0.3) 100%);
+  background-image: -o-radial-gradient(50% 50%, circle cover, rgba(20, 10, 0, 0) 50%, rgba(50, 40, 30, 0.3) 100%);
+  background-image: radial-gradient(50% 50%, circle cover, rgba(20, 10, 0, 0) 50%, rgba(50, 40, 30, 0.3) 100%);
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-size: cover;
+}
+@media (max-width: 600px) {
+  body:after {
+    background: transparent;
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    background: #eee;
+  }
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+/* Text elements */
+p {
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: rgba(70, 160, 200, 0.8);
+  text-decoration: none;
+}
+a:hover {
+  color: #46a0c8;
+  text-decoration: underline;
+}
+
+/* =Content
+----------------------------------------------- */
+#masthead {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  position: fixed;
+  z-index: 5;
+  background: url("images/stripes-left.png") no-repeat scroll 0 0;
+  /*&:before {
+  	background: url('images/stripes-center.png') no-repeat scroll 50% 0;
+  	content: " ";
+  	@include absolute-block;
+  	z-index: 3;
+  	opacity: .3;
+  }
+  &:after {
+  	background: url('images/stripes-right.png') no-repeat scroll right 0;
+  	content: " ";
+  	@include absolute-block;
+  	z-index: 4;
+  	opacity: .5;
+  }*/
+}
+@media (max-width: 600px) {
+  #masthead {
+    position: static;
+    background: transparent;
+  }
+}
+@media (max-width: 600px) {
+  #masthead:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: #eeeeee url("images/header-bg.jpg") no-repeat fixed 0 0;
+    -moz-background-size: contain;
+    background-size: contain;
+    border-bottom: 1px solid white;
+  }
+}
+@media (max-width: 600px) {
+  #masthead:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: url("images/stripes-left.png") no-repeat scroll 0 0;
+    overflow: hidden;
+  }
+}
+#masthead #intro {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 80%;
+  max-width: 500px;
+  z-index: 100;
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.4), 0 3px 3px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 600px) {
+  #masthead #intro {
+    position: static;
+    padding-top: 160px;
+    width: 80%;
+    margin: 10%;
+  }
+}
+#masthead #intro hgroup {
+  margin-bottom: 1.5em;
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 900;
+}
+#masthead #intro hgroup h1 {
+  font-size: 72px;
+  line-height: .8;
+  color: rgba(90, 180, 120, 0.8);
+  margin-left: -3px;
+  margin-bottom: 5px;
+}
+@media (max-width: 600px) {
+  #masthead #intro hgroup h1 {
+    font-size: 36px;
+  }
+}
+#masthead #intro hgroup h2 {
+  font-size: 24px;
+  color: rgba(219, 86, 91, 0.6);
+}
+@media (max-width: 600px) {
+  #masthead #intro hgroup h2 {
+    font-size: 14px;
+  }
+}
+#masthead #intro .entry-content {
+  font-size: 21px;
+  font-family: "kulturista-web",sans-serif;
+  font-weight: 400;
+}
+@media (max-width: 600px) {
+  #masthead #intro .entry-content {
+    font-size: 16px;
+  }
+}
+#masthead #intro .entry-content .links {
+  font-size: .9em;
+}
+
+#main {
+  position: absolute;
+  top: 100%;
+  z-index: 110;
+  background: #222;
+  padding: 200px 10%;
+}
